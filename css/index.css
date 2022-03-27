@@ -2505,17 +2505,69 @@ h6 {
   font-weight: bolder;
 }
 
+#service__main-container .grid-row .card .dropdown .btn {
+  width: 100%;
+  background-color: #fabe78;
+  border-color: #fabe78;
+}
+
+#service__main-container .grid-row .card .dropdown .dropdown-menu {
+  width: 100%;
+  border: 1px solid #868686;
+  background-color: #ddd;
+}
+
+#service__main-container .grid-row .card .dropdown .dropdown-menu li a {
+  background-color: transparent;
+}
+
+#service__main-container .grid-row .card .dropdown .dropdown-menu li:hover {
+  background-color: #fabe78;
+  color: white;
+}
+
 @media screen and (max-width: 1400px) {
-  #service__main-container .grid-row {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+  #service__main-container .grid-row .card {
+    width: 13rem !important;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+  #service__main-container .grid-row .card {
+    width: 11rem !important;
+  }
+  #service__main-container .grid-row .card .service__card-image img {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+  }
+  #service__main-container .grid-row .card h5 {
+    font-size: 18px;
+  }
+  #service__main-container .grid-row .card p {
+    font-size: 12px;
+  }
+  #service__main-container .grid-row .card .dropbtn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
   #service__main-container .grid-row {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  #service__main-container .grid-row .card {
+    width: 15rem !important;
+  }
+  #service__main-container .grid-row .card .dropbtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #service__main-container .grid-row .dropdown {
+    display: none;
   }
 }
 
@@ -2524,12 +2576,18 @@ h6 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  #service__main-container .grid-row .card {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 512px) {
   #service__main-container .grid-row {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  #service__main-container .grid-row .card {
+    width: 100% !important;
   }
 }
 
@@ -2580,7 +2638,7 @@ h6 {
 }
 
 #service__main-container .bg-same ul li {
-  padding: 25px 17px;
+  padding: 25px 13px;
 }
 
 #service__main-container .bg-same ul li .card {
@@ -2595,6 +2653,7 @@ h6 {
   height: 10rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow: hidden;
 }
 
 #service__main-container .bg-same ul li .card h5 {
@@ -2603,6 +2662,11 @@ h6 {
 }
 
 #service__main-container .bg-same ul li .card a {
+  color: #181818;
+  text-decoration: none;
+}
+
+#service__main-container .bg-same ul li .card .read_more {
   color: #181818;
   text-decoration: underline;
 }
@@ -2618,6 +2682,37 @@ h6 {
 
 #service__main-container .bg-same ul li .card:hover a {
   color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  #service__main-container .bg-same ul li .card {
+    width: 15rem !important;
+  }
+  #service__main-container .bg-same ul li .card img {
+    width: 9rem;
+    height: 9rem;
+  }
+  #service__main-container .bg-same ul li .card h5 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #service__main-container .bg-same ul li .card {
+    width: 13rem !important;
+  }
+  #service__main-container .bg-same ul li .card h5 {
+    font-size: 20px;
+  }
+  #service__main-container .bg-same ul li .card p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #service__main-container .bg-same {
+    display: none;
+  }
 }
 
 #service__main-container .hidden__container-one {
@@ -2707,55 +2802,6 @@ h6 {
           transform: rotate(90deg);
 }
 
-#service__main-container .hidden__container-five ul {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style: none;
-}
-
-#service__main-container .hidden__container-five ul li {
-  padding: 25px 17px;
-}
-
-#service__main-container .hidden__container-five ul li .card {
-  border-radius: 15px;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-#service__main-container .hidden__container-five ul li .card img {
-  border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-#service__main-container .hidden__container-five ul li .card h5 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-#service__main-container .hidden__container-five ul li .card a {
-  color: #181818;
-  text-decoration: underline;
-}
-
-#service__main-container .hidden__container-five ul li .card:hover {
-  background-color: #fabe78;
-  color: white;
-}
-
-#service__main-container .hidden__container-five ul li .card:hover .card-title {
-  color: white;
-}
-
-#service__main-container .hidden__container-five ul li .card:hover a {
-  color: white;
-}
-
 #service__detail-container .service__detail-title h1 {
   font-size: 50px;
 }
@@ -2785,6 +2831,12 @@ h6 {
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1400px) {
+  #service__detail-container .line_holder {
+    display: none;
+  }
 }
 
 .service__short-desc p {

@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/index.css" />
   <title>Service</title>
@@ -52,13 +52,13 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home </a>
+              <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About Us </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services </a>
+              <a class="nav-link active" href="service.html">Services </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="gallery.html"> Gallery </a>
@@ -106,8 +106,8 @@
 
   <section id="service__main-container" class="section-padding">
     <div class="container">
-      <div class="grid-row justify-content-start">
-        <div class="grid-column" data-aos="zoom-in-up" data-aos-duration="500">
+      <div class="grid-row justify-content-start mb-3">
+        <div class="grid-column wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
           <div class="card pt-3 pb-3" style="width: 15rem">
             <div class="service__card-image d-flex justify-content-center mt-4">
               <img
@@ -122,80 +122,519 @@
               </p>
             </div>
             <div class="dropdown-container">
-              <button class="dropbtn">
-                Dropdown
+              <button class="dropbtn" data-id="1" id="button-show">
+                View More
               </button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                View More
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="service-detail.html">Swedish Massage</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Hot Stobe Massage</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Reflexology</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Shiatsu Massage</a></li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="grid-column" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="grid-column wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
           <div class="card pt-3 pb-3" style="width: 15rem">
             <div class="service__card-image d-flex justify-content-center mt-4">
-              <img
-                src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+              <img src="https://goodspaguide.co.uk/images/uploads/Features/Pools/swan-pipes-in-pool.jpg"
                 class="card-img-top" alt="..." />
             </div>
             <div class="card-body text-center">
-              <h5 class="card-title">Massage Therapy</h5>
+              <h5 class="card-title">Hydro Therapy</h5>
               <p class="card-text mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Similique numquam deserunt voluptate.
               </p>
             </div>
             <div class="dropdown-container">
-              <button class="dropbtn">
-                Dropdown
+              <button class="dropbtn" data-id="2" id="button-two">
+                View More
               </button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                View More
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="service-detail.html">Aquatic Exercise</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Warm Water Bath</a></li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="grid-column" data-aos="zoom-in-up" data-aos-duration="1500">
+        <div class="grid-column wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
           <div class="card pt-3 pb-3" style="width: 15rem">
             <div class="service__card-image d-flex justify-content-center mt-4">
-              <img
-                src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
-                class="card-img-top" alt="..." />
+              <img src="https://femina.wwmindia.com/content/2021/jan/facials-thumb1611542403.jpg" class="card-img-top"
+                alt="..." />
             </div>
             <div class="card-body text-center">
-              <h5 class="card-title">Massage Therapy</h5>
+              <h5 class="card-title">Beauty Therapy</h5>
               <p class="card-text mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Similique numquam deserunt voluptate.
               </p>
             </div>
             <div class="dropdown-container">
-              <button class="dropbtn">
-                Dropdown
+              <button class="dropbtn" data-id="3">
+                View More
               </button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                View More
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="service-detail.html">Hair Cutting</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Eyelash Extensions</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Facial & Skin Care</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Tanning</a></li>
+
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="grid-column" data-aos="zoom-in-up" data-aos-duration="2000">
+        <div class="grid-column wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
           <div class="card pt-3 pb-3" style="width: 15rem">
             <div class="service__card-image d-flex justify-content-center mt-4">
-              <img
-                src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
-                class="card-img-top" alt="..." />
+              <img src="https://sourcingjournal.com/wp-content/uploads/2019/10/parcel-shipping.jpg" class="card-img-top"
+                alt="..." />
             </div>
             <div class="card-body text-center">
-              <h5 class="card-title">Massage Therapy</h5>
+              <h5 class="card-title">Packages</h5>
               <p class="card-text mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Similique numquam deserunt voluptate.
               </p>
             </div>
             <div class="dropdown-container">
-              <button class="dropbtn">
-                Dropdown
+              <button class="dropbtn" data-id="4">
+                View More
               </button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                View More
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="service-detail-package.html">Package1</a></li>
+                <li><a class="dropdown-item" href="service-detail-package.html">Package2</a></li>
+                <li><a class="dropdown-item" href="service-detail-package.html">Package3</a></li>
+                <li><a class="dropdown-item" href="service-detail-package.html">Package4</a></li>
+
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="grid-column" data-aos="zoom-in-up" data-aos-duration="2500">
+        <div class="grid-column wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
+          <div class="card pt-3 pb-3" style="width: 15rem">
+            <div class="service__card-image d-flex justify-content-center mt-4">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Gift Cards</h5>
+              <p class="card-text mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique numquam deserunt voluptate.
+              </p>
+            </div>
+            <div class="dropdown-container">
+              <button class="dropbtn" data-id="5">
+                View More
+              </button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                View More
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="service-detail-gift.html">Craft Cards</a></li>
+                <li><a class="dropdown-item" href="service-detail-card.html">New Year</a></li>
+                <li><a class="dropdown-item" href="service-detail-offer.html">New Offers</a></li>
+                <li><a class="dropdown-item" href="service-detail-GiftAndCards.html">Gifts & Cards</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden__container-one bg-same d-none first-container wow fadeInLeft" data-wow-delay="0.1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" id="first-container1">
+        <div class="inner"></div>
+        <ul class="d-flex flex-wrap justify-content-start">
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Swedish Massage</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hot Stone Massage</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Reflexology</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Shiatsu Massage</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="hidden__container-two bg-same d-none first-container wow fadeInLeft" data-wow-delay="0.5s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" id="first-container2">
+        <div class="inner"></div>
+        <ul class="d-flex flex-wrap justify-content-start">
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://goodspaguide.co.uk/images/uploads/Features/Pools/swan-pipes-in-pool.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Aquatic Exercise</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://goodspaguide.co.uk/images/uploads/Features/Pools/swan-pipes-in-pool.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Warm Water Bath</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="hidden__container-three bg-same d-none first-container wow fadeInLeft" data-wow-delay="0.1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" id="first-container3">
+        <div class="inner"></div>
+        <ul class="d-flex flex-wrap justify-content-start">
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://femina.wwmindia.com/content/2021/jan/facials-thumb1611542403.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hair Cutting</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://femina.wwmindia.com/content/2021/jan/facials-thumb1611542403.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Eyelash Extensions</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://femina.wwmindia.com/content/2021/jan/facials-thumb1611542403.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Facial & Skin Care</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://femina.wwmindia.com/content/2021/jan/facials-thumb1611542403.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tanning</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="hidden__container-four bg-same d-none first-container wow fadeInLeft" data-wow-delay="0.1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" id="first-container4">
+        <div class="inner"></div>
+        <ul class="d-flex flex-wrap justify-content-start">
+          <li>
+            <a href="service-detail-package.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://sourcingjournal.com/wp-content/uploads/2019/10/parcel-shipping.jpg""
+                  class=" card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Package</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-package.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail-package.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://sourcingjournal.com/wp-content/uploads/2019/10/parcel-shipping.jpg""
+                  class=" card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Package</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-package.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail-package.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://sourcingjournal.com/wp-content/uploads/2019/10/parcel-shipping.jpg""
+                  class=" card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Package</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-package.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail-package.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://sourcingjournal.com/wp-content/uploads/2019/10/parcel-shipping.jpg""
+                  class=" card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Package</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-package.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="hidden__container-five bg-same d-none first-container wow fadeInLeft" data-wow-delay="0.1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" id="first-container5">
+        <div class="inner"></div>
+        <ul class="d-flex flex-wrap justify-content-start">
+          <li>
+            <a href="service-detail-gift.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Craft Cards</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-gift.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail-card.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">New Year</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-card.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail-offer.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">New Offers</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-offer.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="service-detail-GiftAndCards.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Gifts & Cards</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail-GiftAndCards.html">Read More</a>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid-row mt-3">
+        <div class="grid-column wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
           <div class="card pt-3 pb-3" style="width: 15rem">
             <div class="service__card-image d-flex justify-content-center mt-4">
               <img
@@ -210,356 +649,107 @@
               </p>
             </div>
             <div class="dropdown-container">
-              <button class="dropbtn">
-                Dropdown
+              <button class="dropbtn" data-id="6" id="button-show">
+                View More
               </button>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                View More
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="service-detail.html">Swedish Massage</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Hot Stobe Massage</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Reflexology</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Shiatsu Massage</a></li>
+              </ul>
             </div>
           </div>
         </div>
+
       </div>
-      <div class="hidden__container-one bg-same"  id="first-container">
+
+      <div class="hidden__container-one bg-same d-none first-container wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" id="first-container6">
         <div class="inner"></div>
         <ul class="d-flex flex-wrap justify-content-start">
           <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Swedish Massage</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Craft Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-gift.html">Read More</a>
-              </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hot Stone Massage</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Year</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-card.html">Read More</a>
-              </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Reflexology</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Offers</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-offer.html">Read More</a>
-              </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
+            <a href="service-detail.html">
+              <div class="card pt-3 pb-3" style="width: 18rem">
+                <div class="service__card-image d-flex justify-content-center mt-4">
+                  <img
+                    src="https://media.istockphoto.com/photos/improved-circulation-gives-skin-a-natural-glow-picture-id1142187788?k=20&m=1142187788&s=612x612&w=0&h=YuAtOO1EQv8bstIT1-PdihdiQnCKgAQ7yb0U3F1GFzg="
+                    class="card-img-top" alt="..." />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Shiatsu Massage</h5>
+                  <p class="card-text mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Similique numquam deserunt voluptate.
+                  </p>
+                  <a class="read_more" href="service-detail.html">Read More</a>
+                </div>
               </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Gifts & Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-GiftAndCards.html">Read More</a>
-              </div>
-            </div>
+            </a>
           </li>
-        </ul>
-      </div>
-      <div class="hidden__container-two bg-same d-none">
-        <div class="inner"></div>
-        <ul class="d-flex flex-wrap justify-content-start">
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Craft Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-gift.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Year</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-card.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Offers</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-offer.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Gifts & Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-GiftAndCards.html">Read More</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="hidden__container-three bg-same d-none">
-        <div class="inner"></div>
-        <ul class="d-flex flex-wrap justify-content-start">
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Craft Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-gift.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Year</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-card.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Offers</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-offer.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Gifts & Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-GiftAndCards.html">Read More</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="hidden__container-four bg-same d-none">
-        <div class="inner"></div>
-        <ul class="d-flex flex-wrap justify-content-start">
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Craft Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-gift.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Year</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-card.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Offers</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-offer.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Gifts & Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-GiftAndCards.html">Read More</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="hidden__container-five bg-same d-none">
-        <div class="inner"></div>
-        <ul class="d-flex flex-wrap justify-content-start">
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Craft Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-gift.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Year</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-card.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">New Offers</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-offer.html">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card pt-3 pb-3" style="width: 18rem">
-              <div class="service__card-image d-flex justify-content-center mt-4">
-                <img src="https://pebblecreekgolf.com/wp-content/uploads/2015/04/generic-gift-card.jpg"
-                  class="card-img-top" alt="..." />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Gifts & Cards</h5>
-                <p class="card-text mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Similique numquam deserunt voluptate.
-                </p>
-                <a href="service-detail-GiftAndCards.html">Read More</a>
-              </div>
-            </div>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -696,7 +886,7 @@
           </div>
           <div class="col-md-6">
             <ul>
-              <li><a href="">Services</a></li>
+              <li><a href="service.html">Services</a></li>
               <li><a href="">Policy</a></li>
             </ul>
           </div>
@@ -707,8 +897,8 @@
 
   <!-- slider js -->
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/wowslider.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <!-- <script type="text/javascript" src="js/wowslider.js"></script> -->
+  <!-- <script type="text/javascript" src="js/script.js"></script> -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -720,19 +910,23 @@
   <!-- Counts JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-  <!-- <script src="js/main.js"></script> -->
-  <script>
-    AOS.init({
-      easing: "ease-in-out-sine",
-    });
-  </script>
+  <script src="js/animation.js"></script>
   <script>
     $(document).ready(function () {
-      $(".dropbtn").on("click", function () {
-        $(".dropdown__menu-content").hide();
-        $(this).closest('.grid-column').next(".dropdown__menu-content").toggle();
+      $('.dropbtn').on('click', function () {
+        var data_id = $(this).data('id');
+        var container = $('.first-container');
+        $.each(container, function (index, value) {
+          if (!$(this).hasClass('d-none')) {
+            $(this).addClass('d-none');
+          }
+        });
+        var elem = $('#first-container' + data_id);
+        if (elem.hasClass('d-none')) {
+          elem.removeClass('d-none');
+        }
       })
-    });
+    })
   </script>
 </body>
 
