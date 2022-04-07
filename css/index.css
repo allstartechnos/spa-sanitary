@@ -2475,161 +2475,30 @@ h6 {
   height: auto;
 }
 
-#service__main-container .grid-row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  row-gap: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#service__main-container .service__title h1 {
+  position: relative;
 }
 
-#service__main-container .grid-row .card {
-  margin-bottom: 15px;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  padding: 0 !important;
+#service__main-container .service__title h1::before {
+  position: absolute;
 }
 
-#service__main-container .grid-row .card .service__card-image img {
-  border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+#service__main-container .side__menu-bar .side__menu-title h4 {
+  font-weight: 700;
+  position: relative;
 }
 
-#service__main-container .grid-row .card h5 {
-  font-weight: bolder;
+#service__main-container .side__menu-bar .side__menu-title h4::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 9rem;
+  height: 2px;
+  background-color: #181818;
 }
 
-#service__main-container .grid-row .card .dropdown .btn {
-  width: 100%;
-  background-color: #fabe78;
-  border-color: #fabe78;
-}
-
-#service__main-container .grid-row .card .dropdown .dropdown-menu {
-  width: 100%;
-  border: 1px solid #868686;
-  background-color: #ddd;
-}
-
-#service__main-container .grid-row .card .dropdown .dropdown-menu li a {
-  background-color: transparent;
-}
-
-#service__main-container .grid-row .card .dropdown .dropdown-menu li:hover {
-  background-color: #fabe78;
-  color: white;
-}
-
-@media screen and (max-width: 1400px) {
-  #service__main-container .grid-row .card {
-    width: 13rem !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #service__main-container .grid-row .card {
-    width: 11rem !important;
-  }
-  #service__main-container .grid-row .card .service__card-image img {
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
-  }
-  #service__main-container .grid-row .card h5 {
-    font-size: 18px;
-  }
-  #service__main-container .grid-row .card p {
-    font-size: 12px;
-  }
-  #service__main-container .grid-row .card .dropbtn {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #service__main-container .grid-row {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  #service__main-container .grid-row .card {
-    width: 15rem !important;
-  }
-  #service__main-container .grid-row .card .dropbtn {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #service__main-container .grid-row .dropdown {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #service__main-container .grid-row {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  #service__main-container .grid-row .card {
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 512px) {
-  #service__main-container .grid-row {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  #service__main-container .grid-row .card {
-    width: 100% !important;
-  }
-}
-
-#service__main-container .dropbtn {
-  background-color: #FABE78;
-  color: white;
-  padding: 10px 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-  width: 100%;
-}
-
-#service__main-container .dropbtn:hover {
-  background-color: #feedd8;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-#service__main-container .dropbtn:focus {
-  background-color: #feedd8;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-#service__main-container .dropdown-container {
-  cursor: pointer;
-  display: inline-block;
-}
-
-#service__main-container .dropdown-container a:hover {
-  background-color: #ddd;
-}
-
-#service__main-container .bg-same {
-  background-color: #F7F7D7;
-  border-radius: 15px;
-}
-
-#service__main-container .bg-same ul {
+#service__main-container .side__menu-bar ul {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
@@ -2637,169 +2506,99 @@ h6 {
   list-style: none;
 }
 
-#service__main-container .bg-same ul li {
-  padding: 25px 13px;
+#service__main-container .side__menu-bar ul li {
+  margin: 20px 0;
 }
 
-#service__main-container .bg-same ul li .card {
-  border-radius: 15px;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+#service__main-container .side__menu-bar ul li a .icon {
+  width: 3rem;
+  margin-right: 1rem;
+  background-color: #181818;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  padding: 5px;
 }
 
-#service__main-container .bg-same ul li .card img {
-  border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  overflow: hidden;
+#service__main-container .side__menu-bar ul li a .icon img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
-#service__main-container .bg-same ul li .card h5 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-#service__main-container .bg-same ul li .card a {
+#service__main-container .side__menu-bar ul li a .side__menu-text span {
   color: #181818;
-  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
-#service__main-container .bg-same ul li .card .read_more {
+#service__main-container .side__menu-bar ul li:hover .side__menu-text span {
+  color: #FABE78;
+  position: relative;
+}
+
+#service__main-container .side__menu-bar ul li:hover .icon {
+  background-color: #FABE78;
+}
+
+#service__main-container .side__menu-bar ul li.active a .icon {
+  background-color: #FABE78;
+}
+
+#service__main-container .side__menu-bar ul li.active a .side__menu-text span {
+  color: #FABE78;
+  position: relative;
+}
+
+#service__main-container .side__menu-bar ul li.active a .side__menu-text span::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 8rem;
+  height: 1px;
+  background-color: #FABE78;
+}
+
+#service__main-container .service__card-holder .service__card .service__card-img {
+  width: 100%;
+  height: 17rem;
+}
+
+#service__main-container .service__card-holder .service__card .service__card-img img {
+  height: 100%;
+  border-radius: 15px 0;
+  -webkit-filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#service__main-container .service__card-holder .service__card .service__card-content h4 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#service__main-container .service__card-holder .service__card .service__card-content p {
+  font-size: 14px;
   color: #181818;
-  text-decoration: underline;
 }
 
-#service__main-container .bg-same ul li .card:hover {
-  background-color: #fabe78;
-  color: white;
+#service__main-container .service__card-holder .service__card .service__card-content .btn {
+  background-color: #FABE78;
+  border-color: #FABE78;
+  color: #181818;
+  font-weight: 600;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
-#service__main-container .bg-same ul li .card:hover .card-title {
-  color: white;
+#service__main-container .service__card-holder .service__card .service__card-content .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-#service__main-container .bg-same ul li .card:hover a {
-  color: white;
-}
-
-@media screen and (max-width: 1400px) {
-  #service__main-container .bg-same ul li .card {
-    width: 15rem !important;
-  }
-  #service__main-container .bg-same ul li .card img {
-    width: 9rem;
-    height: 9rem;
-  }
-  #service__main-container .bg-same ul li .card h5 {
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #service__main-container .bg-same ul li .card {
-    width: 13rem !important;
-  }
-  #service__main-container .bg-same ul li .card h5 {
-    font-size: 20px;
-  }
-  #service__main-container .bg-same ul li .card p {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #service__main-container .bg-same {
-    display: none;
-  }
-}
-
-#service__main-container .hidden__container-one {
-  position: relative;
-}
-
-#service__main-container .hidden__container-one .inner {
-  width: 0;
-  height: 0;
-  border-right: 20px solid #F7F7D7;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: -1rem;
-  left: 7rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#service__main-container .hidden__container-two {
-  position: relative;
-}
-
-#service__main-container .hidden__container-two .inner {
-  width: 0;
-  height: 0;
-  border-right: 20px solid #F7F7D7;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: -1rem;
-  left: 23rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#service__main-container .hidden__container-three {
-  position: relative;
-}
-
-#service__main-container .hidden__container-three .inner {
-  width: 0;
-  height: 0;
-  border-right: 20px solid #F7F7D7;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: -1rem;
-  right: 40rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#service__main-container .hidden__container-four {
-  position: relative;
-}
-
-#service__main-container .hidden__container-four .inner {
-  width: 0;
-  height: 0;
-  border-right: 20px solid #F7F7D7;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: -1rem;
-  right: 24rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#service__main-container .hidden__container-five {
-  background-color: #F7F7D7;
-  border-radius: 15px;
-  position: relative;
-}
-
-#service__main-container .hidden__container-five .inner {
-  width: 0;
-  height: 0;
-  border-right: 20px solid #F7F7D7;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: -1rem;
-  right: 8rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+#service__main-container .service__card-holder .service__card .service__card-content .btn:hover {
+  -webkit-box-shadow: rgba(128, 111, 55, 0.25) 0px 30px 60px -12px inset, rgba(177, 130, 59, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(128, 111, 55, 0.25) 0px 30px 60px -12px inset, rgba(177, 130, 59, 0.3) 0px 18px 36px -18px inset;
 }
 
 #service__detail-container .service__detail-title h1 {
@@ -3211,6 +3010,11 @@ h6 {
   height: auto;
 }
 
+#header .navbar .navbar-toggler .navbar-toggler-icon {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 #header .navbar .navbar-nav .nav-item .dropdown-menu {
   background: #FABE78 !important;
   -webkit-transition: all 0.3s ease-in-out;
@@ -3226,6 +3030,14 @@ h6 {
 
 #header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   color: rgba(202, 202, 202, 0.7) !important;
+}
+
+#header .navbar .navbar-nav .nav-link {
+  color: #868686;
+}
+
+#header .navbar .navbar-nav .nav-link.active {
+  color: #181818;
 }
 
 @media screen and (min-width: 992px) {
@@ -3405,7 +3217,10 @@ h6 {
 
 #highlight .highlight-box img {
   width: 115px;
+  height: 115px;
   border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #highlight .highlight-box h3 {
