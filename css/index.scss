@@ -171,7 +171,13 @@
 }
 
 //main-slider
-
+.windowModal{
+  .modal-dialog{
+    .modal-content{
+      background-color: $primary-color;
+    }
+  }
+}
 .ws-title {
   h5 {
     font-size: 45px;
@@ -503,7 +509,7 @@
     margin-top: 10px;
   }
   .trip-advisor-section {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
     background-color: $color-white;
     padding: 15px;
