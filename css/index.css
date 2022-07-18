@@ -3113,6 +3113,36 @@ h6 {
   }
 }
 
+.windowModal .modal-dialog .center-title {
+  width: 27rem;
+  margin-left: 25px !important;
+  font-weight: 600;
+}
+
+.windowModal .modal-dialog .close {
+  background-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 600;
+  font-size: 28px;
+  width: 20px;
+  height: 20px;
+  line-height: 10px;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99;
+  border: 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.windowModal .modal-dialog .close span {
+  height: 5px;
+}
+
 .windowModal .modal-dialog .modal-content {
   background-color: #F7F7D7;
 }

@@ -22,9 +22,11 @@
   <div class="modal fade windowModal" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header p-1">
-          <h6 class="modal-title">Modal title</h6>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header text-center p-1">
+          <h6 class="center-title pb-0">SPA</h6>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
         </div>
         <div class="modal-body p-0">
           <div class="modal-img">
@@ -32,6 +34,8 @@
               src="https://images-platform.99static.com//VPeAgMceVHdYfaKbpnFk4dgePu4=/1014x1011:2016x2013/fit-in/500x500/99designs-contests-attachments/101/101197/attachment_101197750"
               alt="No Image" width="100%" height="100%">
           </div>
+        </div>
+        <div class="modal-footer">
         </div>
       </div>
     </div>
@@ -714,6 +718,7 @@
     var swiper = new Swiper(".review", {
       spaceBetween: 50,
       centeredSlides: true,
+      loop: true,
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
