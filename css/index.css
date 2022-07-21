@@ -2465,7 +2465,7 @@ h6 {
 
 @media screen and (max-width: 512px) {
   .lightbox .lb-image {
-    width: 600px !important;
+    width: 100% !important;
     height: auto !important;
   }
 }
@@ -3114,9 +3114,10 @@ h6 {
 }
 
 .windowModal .modal-dialog .center-title {
-  width: 27rem;
+  width: 15rem;
   margin-left: 25px !important;
   font-weight: 600;
+  margin-top: 3px;
 }
 
 .windowModal .modal-dialog .close {

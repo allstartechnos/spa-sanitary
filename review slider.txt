@@ -1,0 +1,182 @@
+<div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="trip-advisor-section">
+              <div class="trip-icon">
+                <img
+                  src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                  alt="" width="40%">
+              </div>
+              <div class="card-title">
+                <span>Serenity Spa - Kathmandu</span>
+              </div>
+
+              <div class="card-rating mt-3">
+                <p>Tripadvisor Traveler Rating</p>
+                <div class="star d-flex align-items-center">
+                  <svg viewBox="0 0 1000 200" class='rating'>
+                    <defs>
+                      <polygon id="star"
+                        points="100,0 131,66 200,76 150,128 162,200 100,166 38,200 50,128 0,76 69,66 " />
+                      <clipPath id="stars">
+                        <use xlink:href="#star" />
+                        <use xlink:href="#star" x="20%" />
+                        <use xlink:href="#star" x="40%" />
+                        <use xlink:href="#star" x="60%" />
+                        <use xlink:href="#star" x="80%" />
+                      </clipPath>
+                    </defs>
+                    <rect class='rating__background' clip-path="url(#stars)"></rect>
+                    <!-- Change the width of this rect to change the rating -->
+                    <rect width="90%" class='rating__value' clip-path="url(#stars)"></rect>
+                  </svg>
+                  <span class="review ps-3">42 reviews</span>
+                </div>
+                <div class="trip-ranking mt-2">
+                  <p>Tripadvisor Ranking</p>
+                </div>
+              </div>
+
+              <div class="trip-body-section">
+                <div class="trip-card-title mt-3">
+                  <h5># Top Spa & Wellness in Kathmandu</h5>
+                </div>
+                <div class="trip-card-body">
+                  <p>Recent Traveler Reviews</p>
+                  <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara, hot stone massage
+                    and Singing ball an” <a href="#">Read more</a></p>
+                  <!-- <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara” <a href="#">Read more</a></p>
+                  <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara, hot stone ” <a href="#">Read more</a></p> -->
+                </div>
+
+                <div class="review-links d-flex">
+                  <a href="#" class="me-2">Read reviews</a>
+                  |
+                  <a href="#" class="ms-2">Write a review</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trip-advisor-section">
+              <div class="trip-icon d-flex align-items-center">
+                <img src="https://www.rowanspringfield.com/wp-content/uploads/2016/08/facebook-logo-png.png" alt=""
+                  width="8%">
+                <span style="color: black; font-weight: bold;font-size: 24px; margin-left: 5px;">Facebook</span>
+              </div>
+              <div class="card-title">
+                <span>Serenity Spa - Kathmandu</span>
+              </div>
+
+              <div class="card-rating mt-3">
+                <p>Tripadvisor Traveler Rating</p>
+                <div class="star d-flex align-items-center">
+                  <svg viewBox="0 0 1000 200" class='rating'>
+                    <defs>
+                      <polygon id="star"
+                        points="100,0 131,66 200,76 150,128 162,200 100,166 38,200 50,128 0,76 69,66 " />
+                      <clipPath id="stars">
+                        <use xlink:href="#star" />
+                        <use xlink:href="#star" x="20%" />
+                        <use xlink:href="#star" x="40%" />
+                        <use xlink:href="#star" x="60%" />
+                        <use xlink:href="#star" x="80%" />
+                      </clipPath>
+                    </defs>
+                    <rect class='rating__background' clip-path="url(#stars)"></rect>
+                    <!-- Change the width of this rect to change the rating -->
+                    <rect width="90%" class='rating__value' clip-path="url(#stars)"></rect>
+                  </svg>
+                  <span class="review ps-3">42 reviews</span>
+                </div>
+                <div class="trip-ranking mt-2">
+                  <p>Tripadvisor Ranking</p>
+                </div>
+              </div>
+
+              <div class="trip-body-section">
+                <div class="trip-card-title mt-3">
+                  <h5># Top Spa & Wellness in Kathmandu</h5>
+                </div>
+                <div class="trip-card-body">
+                  <p>Recent Traveler Reviews</p>
+                  <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara, hot stone massage
+                    and Singing ball an” <a href="#">Read more</a></p>
+                  <!-- <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara” <a href="#">Read more</a></p>
+                  <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara, hot stone ” <a href="#">Read more</a></p> -->
+                </div>
+
+                <div class="review-links d-flex">
+                  <a href="#" class="me-2">Read reviews</a>
+                  |
+                  <a href="#" class="ms-2">Write a review</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trip-advisor-section">
+              <div class="trip-icon d-flex align-items-center">
+                <img src="https://www.transparentpng.com/thumb/logo-instagram/z75gfy-instagram-logo-png.png" alt=""
+                  width="8%">
+                <span style="color: black; font-weight: bold;font-size: 24px; margin-left: 5px;">Instagram</span>
+              </div>
+              <div class="card-title">
+                <span>Serenity Spa - Kathmandu</span>
+              </div>
+
+              <div class="card-rating mt-3">
+                <p>Tripadvisor Traveler Rating</p>
+                <div class="star d-flex align-items-center">
+                  <svg viewBox="0 0 1000 200" class='rating'>
+                    <defs>
+                      <polygon id="star"
+                        points="100,0 131,66 200,76 150,128 162,200 100,166 38,200 50,128 0,76 69,66 " />
+                      <clipPath id="stars">
+                        <use xlink:href="#star" />
+                        <use xlink:href="#star" x="20%" />
+                        <use xlink:href="#star" x="40%" />
+                        <use xlink:href="#star" x="60%" />
+                        <use xlink:href="#star" x="80%" />
+                      </clipPath>
+                    </defs>
+                    <rect class='rating__background' clip-path="url(#stars)"></rect>
+                    <!-- Change the width of this rect to change the rating -->
+                    <rect width="90%" class='rating__value' clip-path="url(#stars)"></rect>
+                  </svg>
+                  <span class="review ps-3">42 reviews</span>
+                </div>
+                <div class="trip-ranking mt-2">
+                  <p>Tripadvisor Ranking</p>
+                </div>
+              </div>
+
+              <div class="trip-body-section">
+                <div class="trip-card-title mt-3">
+                  <h5># Top Spa & Wellness in Kathmandu</h5>
+                </div>
+                <div class="trip-card-body">
+                  <p>Recent Traveler Reviews</p>
+                  <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara, hot stone massage
+                    and Singing ball an” <a href="#">Read more</a></p>
+                  <!-- <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara” <a href="#">Read more</a></p>
+                  <p>“Relax your mind and body with an Ayurvedic
+                    treatment, Shirodhara, hot stone ” <a href="#">Read more</a></p> -->
+                </div>
+
+                <div class="review-links d-flex">
+                  <a href="#" class="me-2">Read reviews</a>
+                  |
+                  <a href="#" class="ms-2">Write a review</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
