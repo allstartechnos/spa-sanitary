@@ -3114,8 +3114,7 @@ h6 {
 }
 
 .windowModal .modal-dialog .center-title {
-  width: 15rem;
-  margin-left: 25px !important;
+  width: 100%;
   font-weight: 600;
   margin-top: 3px;
   margin-bottom: 0px;
