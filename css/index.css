@@ -3118,6 +3118,7 @@ h6 {
   margin-left: 25px !important;
   font-weight: 600;
   margin-top: 3px;
+  margin-bottom: 0px;
 }
 
 .windowModal .modal-dialog .close {
