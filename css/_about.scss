@@ -16,6 +16,9 @@
         width: 100%;
         height: 100%;
       }
+      @media screen and (max-width: 426px) {
+        padding-right: 0 !important ;
+      }
     }
     h3 {
       font-size: 24px;
@@ -117,7 +120,7 @@
       top: 0;
       left: 0;
     }
-    >span {
+    > span {
       width: 50%;
       height: 100%;
       overflow: hidden;
@@ -228,7 +231,7 @@
       margin-bottom: 20px;
     }
   }
-  
+
   .fullwidth-section-one {
     background-image: url("https://spalabdev.wpengine.com/wp-content/uploads/2014/05/x-cross.png");
     background-repeat: repeat;
@@ -342,7 +345,7 @@
     background-attachment: fixed;
     // background-position: 50% 70px;
     color: rgb(255, 255, 255);
-    .overlay{
+    .overlay {
       background-color: #000000b4;
       padding: 65px 0px;
       h4 {
@@ -351,7 +354,7 @@
         font-size: 18px;
         margin-bottom: 25px;
       }
-  
+
       h5 {
         font-weight: normal;
         font-family: "Raleway";

@@ -621,7 +621,7 @@
         position: relative;
         text-align: center;
         text-decoration: inherit;
-        color: $primary-color;
+        color: $secondary-color;
       }
       .date {
         border-top: 1px solid #ededed;
@@ -636,7 +636,7 @@
         }
       }
       .comments {
-        background: $primary-color;
+        background: $secondary-color;
         display: block;
         color: #fff;
         span {
@@ -658,7 +658,7 @@
       .entry-metadata {
         p {
           margin-left: 12px;
-          color: $primary-color;
+          color: $secondary-color;
         }
         p:first-child {
           margin-left: 0px !important;
